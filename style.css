@@ -1,52 +1,73 @@
+/* BODY STYLING */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #111;
-    color: #eee;
+    background-image: url('images/avatar2-main.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
 
+/* HEADER */
 header {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.6); /* dark transparent background */
     padding: 15px;
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #00c6ff;
+}
+
+/* NAVIGATION MENU */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline-block;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: #00c6ff;
 }
 
+/* MAIN CONTENT */
 main {
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4); /* transparent overlay for readability */
+    min-height: 80vh;
 }
 
+/* FIGURES AND IMAGES */
 figure {
     margin: 15px;
     padding: 10px;
-    background: #222;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     text-align: center;
-    color: #ccc;
 }
 
 figure img {
     max-width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 figure figcaption {
@@ -55,6 +76,7 @@ figure figcaption {
     color: #ccc;
 }
 
+/* SECTIONS */
 section {
     display: flex;
     flex-wrap: wrap;
@@ -62,9 +84,20 @@ section {
     justify-content: center;
 }
 
+/* FOOTER */
 footer {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
     padding: 10px;
+    position: relative;
+}
+
+/* HEADINGS */
+h2 {
+    color: #00c6ff;
+}
+
+h3 {
+    color: #00c6ff;
 }
